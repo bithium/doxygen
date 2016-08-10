@@ -676,6 +676,7 @@ void PerlModDocVisitor::visit(DocVerbatim *s)
      closeSubBlock();
   }
   m_output.addFieldQuotedString("content", s->text());
+  m_output.addFieldQuotedString("lang", s->language());
   closeItem();
 }
 
